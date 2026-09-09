@@ -1,0 +1,30 @@
+<!doctype html><html><meta charset="utf-8"><title>Verified energy simulation output</title><style>*{box-sizing:border-box}body{margin:0;background:#0d1727;color:#e4ecf6;font:18px Segoe UI}main{width:1200px;padding:30px}h1{margin:0;color:#68d8c2;font-size:30px}p{color:#b7c9dc}pre{font:16px/1.5 Consolas;white-space:pre-wrap;background:#142338;padding:18px;border:1px solid #33465b;border-radius:12px}.badge{color:#68d8c2;font-size:22px}.small{font-size:14px}</style><main><h1>ENERGY CAPACITY SCENARIOS | Actual Python output</h1><p>Python 3.12.14 · NumPy 2.3.5 · pandas 3.0.1 · UCI Tetouan demand &amp; weather</p><pre>CAPACITY SCENARIOS | index 100 = historical median | limit 155
+364 complete days | 144 readings/day | 20,000 simulated days/method
+group          growth seed   block%   iid%   empirical% hours/day
+all_days          0%   42    16.07  96.07      15.93      0.53
+all_days          0%  137    15.70  95.81      15.93      0.52
+all_days          0% 2026    15.83  95.97      15.93      0.52
+all_days         10%   42    34.63  99.98      34.34      1.40
+all_days         10%  137    34.12  99.98      34.34      1.38
+all_days         10% 2026    34.45 100.00      34.34      1.39
+warm_quartile     0%   42    63.04 100.00      62.64      2.09
+warm_quartile     0%  137    62.91 100.00      62.64      2.08
+warm_quartile     0% 2026    62.60 100.00      62.64      2.08
+warm_quartile    10%   42    80.62 100.00      80.22      4.51
+warm_quartile    10%  137    80.15 100.00      80.22      4.46
+warm_quartile    10% 2026    79.83 100.00      80.22      4.47
+Scenario assumptions, not actual grid capacity or outage probabilities.
+Whole-day sampling preserves within-day demand/weather patterns; no forecast claim.
+</pre><p class="badge">PASS: 7 tests · 2 identical runs · exactly 50 core lines</p><p>Monte Carlo estimates checked against exact empirical probabilities.<br>All differences within six simulation standard errors.</p><pre class="small">test_always_safe_and_always_above (test_energy.ScenarioTests.test_always_safe_and_always_above) ... ok
+test_duration_conversion (test_energy.ScenarioTests.test_duration_conversion) ... ok
+test_invalid_input (test_energy.ScenarioTests.test_invalid_input) ... ok
+test_known_dependence_case (test_energy.ScenarioTests.test_known_dependence_case) ... ok
+test_monotone_capacity_with_common_scenarios (test_energy.ScenarioTests.test_monotone_capacity_with_common_scenarios) ... ok
+test_reproducibility (test_energy.ScenarioTests.test_reproducibility) ... ok
+test_strict_exceedance (test_energy.ScenarioTests.test_strict_exceedance) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.207s
+
+OK
+</pre><p>Report displays captured subprocess output. Capacity is hypothetical.<br>No observed outages, physical capacity, or future forecast is claimed.</p></main></html><style>main{width:1080px;padding:24px}h1{font-size:26px}pre{font-size:14px;line-height:1.35;padding:14px}.small{font-size:12px}p{margin:12px 0;font-size:16px}</style>
