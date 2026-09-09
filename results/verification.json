@@ -1,0 +1,8 @@
+{
+  "identical_runs": true,
+  "core_lines": 50,
+  "tests_passed": 7,
+  "all_monte_carlo_estimates_within_6_standard_errors_of_exact": true,
+  "python": "3.12.14",
+  "stdout_sha256": "9411e35f7b86f07df19856b3ae7ae93f2bc0480acaa9cdf08d0f0b6e84e2044d"
+}

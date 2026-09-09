@@ -1,0 +1,12 @@
+test_always_safe_and_always_above (test_energy.ScenarioTests.test_always_safe_and_always_above) ... ok
+test_duration_conversion (test_energy.ScenarioTests.test_duration_conversion) ... ok
+test_invalid_input (test_energy.ScenarioTests.test_invalid_input) ... ok
+test_known_dependence_case (test_energy.ScenarioTests.test_known_dependence_case) ... ok
+test_monotone_capacity_with_common_scenarios (test_energy.ScenarioTests.test_monotone_capacity_with_common_scenarios) ... ok
+test_reproducibility (test_energy.ScenarioTests.test_reproducibility) ... ok
+test_strict_exceedance (test_energy.ScenarioTests.test_strict_exceedance) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.207s
+
+OK

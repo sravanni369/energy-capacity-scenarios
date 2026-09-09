@@ -1,0 +1,181 @@
+{
+  "capacity_index": 155.0,
+  "repeats": 20000,
+  "warm_threshold": 22.87229166666667,
+  "scenarios": [
+    {
+      "group": "all_days",
+      "days": 364,
+      "growth": 0.0,
+      "seed": 42,
+      "block": 0.1607,
+      "iid": 0.9607,
+      "exact": 0.15934065934065933,
+      "iid_exact": 0.9578460875350436,
+      "hours": 0.5250750000000001
+    },
+    {
+      "group": "all_days",
+      "days": 364,
+      "growth": 0.0,
+      "seed": 137,
+      "block": 0.157,
+      "iid": 0.9581,
+      "exact": 0.15934065934065933,
+      "iid_exact": 0.9578460875350436,
+      "hours": 0.5166083333333333
+    },
+    {
+      "group": "all_days",
+      "days": 364,
+      "growth": 0.0,
+      "seed": 2026,
+      "block": 0.1583,
+      "iid": 0.9597,
+      "exact": 0.15934065934065933,
+      "iid_exact": 0.9578460875350436,
+      "hours": 0.52135
+    },
+    {
+      "group": "all_days",
+      "days": 364,
+      "growth": 0.1,
+      "seed": 42,
+      "block": 0.3463,
+      "iid": 0.99985,
+      "exact": 0.3434065934065934,
+      "iid_exact": 0.9998105812802833,
+      "hours": 1.4021666666666668
+    },
+    {
+      "group": "all_days",
+      "days": 364,
+      "growth": 0.1,
+      "seed": 137,
+      "block": 0.3412,
+      "iid": 0.99975,
+      "exact": 0.3434065934065934,
+      "iid_exact": 0.9998105812802833,
+      "hours": 1.3759249999999998
+    },
+    {
+      "group": "all_days",
+      "days": 364,
+      "growth": 0.1,
+      "seed": 2026,
+      "block": 0.34445,
+      "iid": 1.0,
+      "exact": 0.3434065934065934,
+      "iid_exact": 0.9998105812802833,
+      "hours": 1.38985
+    },
+    {
+      "group": "warm_quartile",
+      "days": 91,
+      "growth": 0.0,
+      "seed": 42,
+      "block": 0.63045,
+      "iid": 1.0,
+      "exact": 0.6263736263736264,
+      "iid_exact": 0.9999978152673326,
+      "hours": 2.09105
+    },
+    {
+      "group": "warm_quartile",
+      "days": 91,
+      "growth": 0.0,
+      "seed": 137,
+      "block": 0.62915,
+      "iid": 1.0,
+      "exact": 0.6263736263736264,
+      "iid_exact": 0.9999978152673326,
+      "hours": 2.080375
+    },
+    {
+      "group": "warm_quartile",
+      "days": 91,
+      "growth": 0.0,
+      "seed": 2026,
+      "block": 0.62605,
+      "iid": 1.0,
+      "exact": 0.6263736263736264,
+      "iid_exact": 0.9999978152673326,
+      "hours": 2.0808
+    },
+    {
+      "group": "warm_quartile",
+      "days": 91,
+      "growth": 0.1,
+      "seed": 42,
+      "block": 0.80625,
+      "iid": 1.0,
+      "exact": 0.8021978021978022,
+      "iid_exact": 0.9999999999998663,
+      "hours": 4.505116666666667
+    },
+    {
+      "group": "warm_quartile",
+      "days": 91,
+      "growth": 0.1,
+      "seed": 137,
+      "block": 0.8015,
+      "iid": 1.0,
+      "exact": 0.8021978021978022,
+      "iid_exact": 0.9999999999998663,
+      "hours": 4.464666666666667
+    },
+    {
+      "group": "warm_quartile",
+      "days": 91,
+      "growth": 0.1,
+      "seed": 2026,
+      "block": 0.79835,
+      "iid": 1.0,
+      "exact": 0.8021978021978022,
+      "iid_exact": 0.9999999999998663,
+      "hours": 4.4746250000000005
+    }
+  ],
+  "capacity_sweep": [
+    {
+      "capacity": 110,
+      "growth": 0.0,
+      "empirical_risk": 1.0
+    },
+    {
+      "capacity": 110,
+      "growth": 0.1,
+      "empirical_risk": 1.0
+    },
+    {
+      "capacity": 125,
+      "growth": 0.0,
+      "empirical_risk": 0.9615384615384616
+    },
+    {
+      "capacity": 125,
+      "growth": 0.1,
+      "empirical_risk": 1.0
+    },
+    {
+      "capacity": 140,
+      "growth": 0.0,
+      "empirical_risk": 0.3873626373626374
+    },
+    {
+      "capacity": 140,
+      "growth": 0.1,
+      "empirical_risk": 0.9423076923076923
+    },
+    {
+      "capacity": 155,
+      "growth": 0.0,
+      "empirical_risk": 0.15934065934065933
+    },
+    {
+      "capacity": 155,
+      "growth": 0.1,
+      "empirical_risk": 0.3434065934065934
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "rows": 52416,
+  "missing_cells": 0,
+  "duplicate_timestamps": 0,
+  "first": "2017-01-01 00:00:00",
+  "last": "2017-12-30 23:50:00",
+  "time_step_counts_seconds": {
+    "600.0": 52415
+  },
+  "day_counts": {
+    "144": 364
+  },
+  "total_load_median_source_units": 69788.79094,
+  "normalization": "100 * sum of three zone readings / full-sample median sum",
+  "units": "Normalized index; UCI variable table leaves physical units unspecified",
+  "sha256_raw_csv": "ca8b2f30cf07dd872cb7f2aa45dac110ee38dbe5fc5910a6ff4bcc530dae3a40",
+  "source_url": "https://archive.ics.uci.edu/dataset/849/power+consumption+of+tetouan+city"
+}

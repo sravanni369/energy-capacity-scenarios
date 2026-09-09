@@ -1,0 +1,17 @@
+CAPACITY SCENARIOS | index 100 = historical median | limit 155
+364 complete days | 144 readings/day | 20,000 simulated days/method
+group          growth seed   block%   iid%   empirical% hours/day
+all_days          0%   42    16.07  96.07      15.93      0.53
+all_days          0%  137    15.70  95.81      15.93      0.52
+all_days          0% 2026    15.83  95.97      15.93      0.52
+all_days         10%   42    34.63  99.98      34.34      1.40
+all_days         10%  137    34.12  99.98      34.34      1.38
+all_days         10% 2026    34.45 100.00      34.34      1.39
+warm_quartile     0%   42    63.04 100.00      62.64      2.09
+warm_quartile     0%  137    62.91 100.00      62.64      2.08
+warm_quartile     0% 2026    62.60 100.00      62.64      2.08
+warm_quartile    10%   42    80.62 100.00      80.22      4.51
+warm_quartile    10%  137    80.15 100.00      80.22      4.46
+warm_quartile    10% 2026    79.83 100.00      80.22      4.47
+Scenario assumptions, not actual grid capacity or outage probabilities.
+Whole-day sampling preserves within-day demand/weather patterns; no forecast claim.
