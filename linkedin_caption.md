@@ -1,32 +1,37 @@
-I shuffled the electricity readings. The estimated daily risk jumped from 16% to 96%.
+I got two very different answers from the same electricity dataset: 16% and 96%.
 
-I adapted the resampling example from Practical Statistics for Data Scientists by Peter Bruce, Andrew Bruce and Peter Gedeck (O'Reilly, 2nd edition, chapter 2, pp. 62–64; Python example p. 63) into a 50-line energy scenario simulator.
+The difference came from how I sampled a day.
 
-The question: how often would demand exceed a hypothetical capacity limit?
+For this project, I adapted the bootstrap example in Practical Statistics for Data Scientists by Peter Bruce, Andrew Bruce and Peter Gedeck into a 50-line Python energy scenario simulator.
 
-I downloaded UCI's Tetouan demand-and-weather data and audited it: 52,416 readings, 364 complete days, no missing cells and no duplicate timestamps.
+The business question was simple: how often could demand cross a chosen capacity limit?
 
-Then I compared two ways to simulate a day:
+I used UCI's Tetouan electricity and weather records: 52,416 readings across 364 complete days. After checking timestamps, missing values and duplicates, I tried two approaches:
 
-• Draw 144 independent ten-minute readings.
-• Draw one complete historical day, keeping its demand pattern together.
+• Pick 144 ten-minute readings independently to build an artificial day.
+• Pick a whole historical day and keep its demand pattern together.
 
-At an illustrative capacity index of 155, with median demand set to 100, seed 42 produced:
+At the same hypothetical capacity limit, one run gave:
 
 Independent readings: 96.07% of simulated days crossed the limit.
-Whole days: 16.07%.
+Whole historical days: 16.07%.
 Exact historical day rate: 15.93%.
 
-The independent sampler scattered clustered peaks across many more artificial days. Same source data. Different time structure. Different answer.
+Picking readings independently spread clustered peaks across many more days. That changed the answer dramatically, even though the source data stayed the same.
 
-I also tested a stated 10% demand-growth scenario. The exact all-day rate rose from 15.93% to 34.34%. For the warmest quarter of historical days, it went from 62.64% to 80.22%.
+I also added a 10% demand-growth scenario. The exact all-day exceedance rate rose from 15.93% to 34.34%. The repository includes the warm-weather comparison and the full capacity sweep, so the headline result has context.
 
-These are scenario results, not real grid capacity, blackout probabilities, a forecast, or a causal claim about temperature. The repo keeps the full capacity sweep, including the initial 125-point scenario that was exceeded almost every day.
+The limit is illustrative: an index of 155, with median demand set to 100. These results do not predict blackouts or measure the city's actual capacity.
 
-Seven tests passed. Two complete runs matched. Three seeds were checked against exact probabilities. The core has exactly 50 physical lines; data preparation and tests are separate.
+Seven tests passed, two full runs matched, and I checked three random seeds against exact probabilities. The simulation core is 50 lines; preparation and tests are separate.
 
-The textbook supplied the resampling pattern. My extension was preserving complete days, adding weather context and demand stress, and checking the simulation against a result I could calculate exactly.
+My main takeaway: before trusting a simulation, check what its sampling method does to the structure of the data.
 
+Book credit: Practical Statistics for Data Scientists, 2nd edition, O'Reilly (2020), chapter 2, pp. 62–64; Python example on p. 63. I extended its resampling pattern to complete electricity-demand days, weather groups and demand-growth scenarios.
+
+Data credit: Salam and El Hibaoui, Power Consumption of Tetouan City, UCI, CC BY 4.0.
+
+Code, data, tests and results:
 https://github.com/sravanni369/energy-capacity-scenarios
 
-#DataScience #EnergyAnalytics #Python #MonteCarlo #DataQuality
+#DataScience #EnergyAnalytics #Python #MonteCarlo
